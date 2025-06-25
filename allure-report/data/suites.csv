@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4377","basic test","ignoreHttpsErrors","Mon Jun 23 14:06:01 IST 2025","passed","Mon Jun 23 14:06:05 IST 2025","","example.spec.ts","",""
+"","1418","basic test","Chrome","Mon Jun 23 14:05:38 IST 2025","passed","Mon Jun 23 14:05:39 IST 2025","","example.spec.ts","",""
+"","2806","basic test","Safari","Mon Jun 23 14:05:44 IST 2025","passed","Mon Jun 23 14:05:47 IST 2025","","example.spec.ts","",""
+"","5414","basic test","iPhone","Mon Jun 23 14:05:53 IST 2025","passed","Mon Jun 23 14:05:58 IST 2025","","example.spec.ts","",""
+"","2846","basic test","differentPermission","Mon Jun 23 14:06:07 IST 2025","passed","Mon Jun 23 14:06:09 IST 2025","","example.spec.ts","",""
+"","2344","basic test","Firefox","Mon Jun 23 14:05:40 IST 2025","passed","Mon Jun 23 14:05:42 IST 2025","","example.spec.ts","",""
