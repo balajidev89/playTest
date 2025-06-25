@@ -25,7 +25,8 @@ pipeline {
           npx playwright test
         '''
       }
-      post {
+    }
+    post {
                 steps {
                 script {
                     allure([
