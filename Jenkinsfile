@@ -1,8 +1,8 @@
 pipeline {
-  agent { 
+  agent {
     docker { 
       image 'mcr.microsoft.com/playwright:v1.17.2-focal'
-    } 
+    }
   }
   stages {
     stage('install playwright') {
@@ -36,8 +36,8 @@ pipeline {
                         reportBuildPolicy: 'ALWAYS',
                         results: [[path: '$WORKSPACE/target/allure-results']]
                     ])
-                }
-            }
-    }
+                  }
+               }
+        }
   }
 }
