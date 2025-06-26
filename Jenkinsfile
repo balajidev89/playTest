@@ -19,6 +19,8 @@ pipeline {
         sh '''
           npx playwright test --list
           npx playwright test
+          allure generate allure-results -o allure-report --clean
+          allure open report
         '''
       }
     }
