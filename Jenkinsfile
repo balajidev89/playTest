@@ -25,7 +25,7 @@ pipeline {
     }
     stage("Generate Reports") {
                     steps {
-                        allure commandline: "Allure 2.34.0", includeProperties: false, jdk: "", results: [[path: "target/allure-results"]], reportBuildPolicy: "ALWAYS"
+                        allure commandline: "Allure 2.34.0", includeProperties: false, jdk: "", results: [[path: "${WORKSPACE}/allure-report"]], reportBuildPolicy: "ALWAYS"
                     }
                 }
           }
