@@ -23,10 +23,18 @@ pipeline {
         '''
       }
     }
-    stage("Generate Reports") {
-                    steps {
-                        allure commandline: "Allure 2.32.0", includeProperties: false, jdk: "", results: [[path: "allure-results"]], reportBuildPolicy: "ALWAYS"
-                    }
-                }
+    post {
+        always {
+            junit 'test-results/junit-report.xml'
+            publishHTML(target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'playwright-report',
+                reportFiles: 'index.html',
+                reportName: 'Playwright Report'
+            ])
+        }
+    }
           }
 }
